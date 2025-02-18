@@ -5,6 +5,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Technotsav - Sri Indu College</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        
+        /* Hover effect on event links */
+        a {
+            transition: background-color 0.3s ease;
+            padding: 5px;
+            text-decoration: none;
+        }
+
+        /* Change color on hover */
+        a:hover {
+            background-color: #ff4d4d; /* Red color */
+            color: white;
+            border-radius: 5px;
+        }
+
+        /* Click effect using active state */
+        a:active {
+            background-color: #d1b7b7; /* Darker Red when clicked */
+            color: white;
+        }
+
+        /* Smooth mouse drag effect */
+        a.dragged {
+            background-color: #baafaf; /* Light red when mouse is dragged */
+        }
+    </style>
 </head>
 <body>
 
@@ -19,68 +46,103 @@
             </label>
         </div>
     
-<div class="sri-indu">
-    <div class="sri-indu-img">
-    <img src="Sri-Indu.png" alt="Sri Indu Image">
-    </div>
-    <div class="clg-name">
-        <h1 class="name" style="color: red;"> Sri Indu College Of Engineering & Technology</h1>
-    </div>
-</div>
-    <div class="sidebar-menu">
-        <div class="x1">
-        <h2 class="tech" style="color: red;">Technotsav 2025</h2>
+        <div class="sri-indu">
+            <div class="sri-indu-img">
+                <img src="Sri-Indu.png" alt="Sri Indu Image">
+            </div>
+            <div class="clg-name">
+                <h1 class="name" style="color: red;"> Sri Indu College Of Engineering & Technology</h1>
+            </div>
         </div>
-        <div class="x2">
-        <nav>
-            <ul class="navul">
-                <li class="navli"><a href="#home">Home</a></li>
-                <li class="navli"><a href="#technical">Technical Events</a></li>
-                <li class="navli"><a href="#non-technical">Non-Technical Events</a></li>
-                <li class="navli"><a href="#contact">Contact</a></li>
+
+        <div class="sidebar-menu"><br><br><br><br>
+            <div class="x1">
+                <h2 class="tech" style="color: red;">Technotsav 2025</h2>
+            </div>
+            <div class="x2">
+                <nav>
+                    <ul class="navul">
+                        <li class="navli"><a href="#home">Home</a></li>
+                        <li class="navli"><a href="#technical">Technical Events</a></li>
+                        <li class="navli"><a href="#non-technical">Non-Technical Events</a></li>
+                        <li class="navli"><a href="#contact">Event Coordinators</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+
+        <section id="home"><br><br><br><br><br>
+            <h2>Welcome to Technotsav 2025</h2>
+            <h2>Computer Science & Information Technology-CSI</h2>
+            <p>The ultimate tech fest at Sri Indu College of Engineering & Technology!</p>
+            <p>Join us for a series of exciting events that will showcase innovation, creativity, and skills in the fields of technology and beyond. Whether you're a tech enthusiast or someone looking to have fun, Technotsav 2025 has something for everyone.</p>
+        </section>
+
+        <section id="technical">
+            <h2>Technical Events</h2>
+            <p>Our technical events are designed for all the innovators, coders, and tech enthusiasts who want to showcase their skills and creativity. Register now and get ready to compete with the best!</p>
+            <ul>
+                <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSfGQJeQWXFJQLAlC8JPphn4mXERIhvKHQJGkefsgk_n2QGCTA/viewform" onmousedown="changeBackground(event)">Paper Presentation</a></li>
+                <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSc1gS_PU0R49jYa04xQ_IlYois2EZIHTmMYn6X_LIxcbD0AfA/viewform" onmousedown="changeBackground(event)">Tech Quiz</a></li>
+                <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSfAtJ_UEohJJsz3xCa94YyBbvEpgywxEGWjEj0f4NCiOKZvVg/viewform?usp=sharing" onmousedown="changeBackground(event)">Code RefleX</a></li>
+                <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSfNF64-wNHAJuVTNnWDxNdUcyzmY7ymPciooJ4YA-TeBAcfjw/viewform" onmousedown="changeBackground(event)">Just a Prompt</a></li>
             </ul>
-        </nav>
-        </div>
+        </section>
+
+        <section id="non-technical">
+            <h2>Non-Technical Events</h2>
+            <p>Our non-technical events are just as exciting, offering fun and engaging activities for all participants. Don't miss out on these entertaining challenges!</p>
+            <ul>
+                <li><a href="#" onmousedown="changeBackground(event)">Treasure Hunt</a></li>
+                <li><a href="#" onmousedown="changeBackground(event)">Heads Up</a></li>
+                <li><a href="#" onmousedown="changeBackground(event)">Flip Tac Toe</a></li>
+                <li><a href="#" onmousedown="changeBackground(event)">Balloon Hunt</a></li>
+            </ul>
+        </section>
+
+        <section id="contact">
+            <h2>Event Coordinators</h2>
+            <h3>Tech Quiz</h3>
+            <p>Sowmitha - 9381704341, Keerthana - 9515081461</p>
+
+            <h3>Code RefleX</h3>
+            <p>Gowtham - 7075525127, Naresh - 8978453085</p>
+
+            <h3>Just a Prompt</h3>
+            <p>Sree Laxmee - 9398682422, Ankitha - 9347041864</p>
+
+            <h3>Paper Presentation</h3>
+            <p>Supriya - 8688135618, Harsha Vardhan - 8367593015</p>
+
+            <h3>Walker Bottle, Flip Tac Toe</h3>
+            <p>Akshitha - 8977965508</p>
+
+            <h3>Treasure Hunt</h3>
+            <p>Shivaram - 8125872602, Naveen - 9100570066</p>
+
+            <h3>Heads Up</h3>
+            <p>Nousheen - 7569301815, Harshitha - 8309590301</p>
+
+            <h3>Balloon Hunt</h3>
+            <p>Venu - 8074130851</p>
+        </section>
+
+        <footer>
+            <p>&copy; 2025 Technotsav, Computer Science & Information Technology-CSI<p>Sri Indu College of Engineering & Technology</p></p>
+        </footer>
     </div>
 
-    <section id="home"><br><br>
-        <h2>Welcome to Technotsav 2025-CSI</h2>
-        <p>The ultimate tech fest at Sri Indu College of Engineering & Technology!</p><br>
-        <p>Join us for a series of exciting events that will showcase innovation, creativity, and skills in the fields of technology and beyond. Whether you're a tech enthusiast or someone looking to have fun, Technotsav 2025 has something for everyone.</p>
-    </section>
-
-    <section id="technical">
-        <h2>Technical Events</h2>
-        <p>Our technical events are designed for all the innovators, coders, and tech enthusiasts who want to showcase their skills and creativity. Register now and get ready to compete with the best!</p>
-        <ul>
-            <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSfGQJeQWXFJQLAlC8JPphn4mXERIhvKHQJGkefsgk_n2QGCTA/viewform">Paper Presentation</a> - Present your research or innovations in the field of technology.</li>
-            <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSc1gS_PU0R49jYa04xQ_IlYois2EZIHTmMYn6X_LIxcbD0AfA/viewform">Tech Quiz</a> - Test your knowledge and prove your expertise in the world of tech.</li>
-            <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSfAtJ_UEohJJsz3xCa94YyBbvEpgywxEGWjEj0f4NCiOKZvVg/viewform?usp=sharing">Code RefleX</a> - Compete in coding challenges and see how fast you can solve problems.</li>
-            <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSfNF64-wNHAJuVTNnWDxNdUcyzmY7ymPciooJ4YA-TeBAcfjw/viewform">Just a Prompt</a> - Create innovative solutions to unique coding prompts in a limited time.</li>
-        </ul>
-    </section>
-
-    <section id="non-technical">
-        <h2>Non-Technical Events</h2>
-        <p>Our non-technical events are just as exciting, offering fun and engaging activities for all participants. Don't miss out on these entertaining challenges!</p>
-        <ul>
-            <li><a href="#">Treasure Hunt</a> - Follow the clues to uncover hidden treasures in this thrilling event.</li>
-            <li><a href="#">Heads Up</a> - A fun guessing game that will have you and your team thinking fast!</li>
-            <li><a href="#">Flip Toe</a> - A creative twist on the classic game of Tic-Tac-Toe.</li>
-            <li><a href="#">Balloon Hunt</a> - Test your agility and teamwork as you race to find the hidden balloons!</li>
-        </ul>
-    </section>
-
-   
-
-    <section id="contact">
-        <h2>Contact Us</h2>
-        <p>Email: technotsav@sriindu.ac.in</p>
-        <p>Phone: +91 9876543210</p>
-    </section>
-
-    <footer>
-        <p>&copy; 2025 Technotsav, Sri Indu College of Engineering & Technology</p>
-    </footer>
+    <script>
+        // Change background color on mouse click
+        function changeBackground(event) {
+            var link = event.target;
+            link.classList.add('dragged');
+            
+            // Remove the effect after 0.3 seconds to allow smooth transition
+            setTimeout(function() {
+                link.classList.remove('dragged');
+            }, 300);
+        }
+    </script>
 </body>
 </html>
