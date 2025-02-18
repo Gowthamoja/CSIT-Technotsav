@@ -286,6 +286,10 @@ footer {
     #check:checked ~ .sidebar-menu {
         top: 2rem;
     }
+    #check:checked ~ .sri-indu {
+    display: none !important;
+}
+
 }
 
 /* Medium devices (tablets, 768px and up) */
@@ -318,6 +322,10 @@ footer {
     form {
         width: 60%;
     }
+    #check:checked ~ .sri-indu {
+    display: none !important;
+}
+
 }
 
 /* Large devices (laptops/desktops, 1024px and up) */
@@ -350,6 +358,10 @@ footer {
     form {
         width: 50%;
     }
+    #check:checked ~ .sri-indu {
+    display: none !important;
+}
+
 }
 
 /* Extra large devices (large desktops, 1440px and up) */
@@ -382,6 +394,10 @@ footer {
     form {
         width: 45%;
     }
+    #check:checked ~ .sri-indu {
+    display: none !important;
+}
+
 }
 
 /* Ultra-Wide screens (4K, 2560px and up) */
@@ -414,6 +430,10 @@ footer {
     form {
         width: 40%;
     }
+    #check:checked ~ .sri-indu {
+    display: none !important;
+}
+
 }
 
 
