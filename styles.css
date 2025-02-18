@@ -256,6 +256,165 @@ footer {
         width: 80%;
     }
 }
+/* Responsive Design for Different Screen Sizes */
+
+/* Small devices (phones, 320px and up) */
+@media (min-width: 320px) {
+    section p {
+        font-size: 0.9rem !important;
+    }
+    section h2 {
+        font-size: 1.1rem !important;
+    }
+    .navli a {
+        font-size: 0.9rem !important;
+    }
+    .sri-indu {
+        top: 4rem !important;
+        left: 0 !important;
+    }
+    .sri-indu-img img {
+        height: 4rem;
+        width: 8rem;
+    }
+    .clg-name .name {
+        font-size: 1.3rem !important;
+    }
+    .sidebar-menu {
+        top: -50rem;
+    }
+    #check:checked ~ .sidebar-menu {
+        top: 2rem;
+    }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    section {
+        padding: 80px 8%;
+    }
+    section p {
+        font-size: 1.1rem !important;
+    }
+    section h2 {
+        font-size: 1.5rem !important;
+    }
+    .navli a {
+        font-size: 1.2rem !important;
+    }
+    .sri-indu {
+        top: 6rem !important;
+    }
+    .sri-indu-img img {
+        height: 6rem;
+        width: 12rem;
+    }
+    .clg-name .name {
+        font-size: 1.8rem !important;
+    }
+    li {
+        width: 60%;
+    }
+    form {
+        width: 60%;
+    }
+}
+
+/* Large devices (laptops/desktops, 1024px and up) */
+@media (min-width: 1024px) {
+    section {
+        padding: 100px 12%;
+    }
+    section p {
+        font-size: 1.3rem !important;
+    }
+    section h2 {
+        font-size: 2rem !important;
+    }
+    .navli a {
+        font-size: 1.4rem !important;
+    }
+    .sri-indu {
+        top: 7rem !important;
+    }
+    .sri-indu-img img {
+        height: 7rem;
+        width: 14rem;
+    }
+    .clg-name .name {
+        font-size: 2.2rem !important;
+    }
+    li {
+        width: 50%;
+    }
+    form {
+        width: 50%;
+    }
+}
+
+/* Extra large devices (large desktops, 1440px and up) */
+@media (min-width: 1440px) {
+    section {
+        padding: 120px 15%;
+    }
+    section p {
+        font-size: 1.5rem !important;
+    }
+    section h2 {
+        font-size: 2.5rem !important;
+    }
+    .navli a {
+        font-size: 1.5rem !important;
+    }
+    .sri-indu {
+        top: 8rem !important;
+    }
+    .sri-indu-img img {
+        height: 8rem;
+        width: 16rem;
+    }
+    .clg-name .name {
+        font-size: 2.5rem !important;
+    }
+    li {
+        width: 45%;
+    }
+    form {
+        width: 45%;
+    }
+}
+
+/* Ultra-Wide screens (4K, 2560px and up) */
+@media (min-width: 2560px) {
+    section {
+        padding: 150px 20%;
+    }
+    section p {
+        font-size: 2rem !important;
+    }
+    section h2 {
+        font-size: 3rem !important;
+    }
+    .navli a {
+        font-size: 2rem !important;
+    }
+    .sri-indu {
+        top: 10rem !important;
+    }
+    .sri-indu-img img {
+        height: 10rem;
+        width: 20rem;
+    }
+    .clg-name .name {
+        font-size: 3rem !important;
+    }
+    li {
+        width: 40%;
+    }
+    form {
+        width: 40%;
+    }
+}
 
 
 .ham {
