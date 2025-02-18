@@ -182,7 +182,55 @@ footer {
 }
 
 /* Responsive Design */
-@media (max-width: 768px) {
+@media (min-width: 375px) {
+
+    section p {
+        font-size: 1rem !important;
+    }
+
+    section h2 {
+        font-size: 1.2rem !important;
+    }
+
+    .navli a {
+        font-size: 1rem !important;
+    }
+
+    .navli {
+        width: min-content !important;
+        display: flex !important;
+        flex-direction: row !important;
+        justify-content: space-evenly !important;
+        align-content: center !important;
+        align-items: center !important;
+    }
+
+
+
+    .sri-indu {
+        top: 5rem !important;
+        left: 0rem !important;
+    }
+
+    #check:checked ~ .sidebar-menu {
+        top: 2rem;
+        left: 0rem;
+    }
+    
+    #check:checked ~ .sri-indu {
+          /* Hides the .sri-indu container when the checkbox is checked */
+          top: -500rem !important;
+    }
+
+    .sri-indu-img img{
+        height: 5rem;
+        width: 10rem;
+    }
+
+    .clg-name .name {
+        font-size: 1.5rem !important;
+    }
+
     header {
         flex-direction: column;
         text-align: center;
@@ -251,6 +299,10 @@ footer {
     display:none;
     padding: 0;
     margin: 40px;
+}
+
+.clg-name .name {
+    font-size: 4rem;
 }
 
 /* Checked State - Keep animation until unchecked */
