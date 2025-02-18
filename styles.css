@@ -41,13 +41,13 @@ header h1 {
 }
 
 nav ul {
-    display: flex;
+
     list-style: none;
 }
 
-nav ul li {
+/* nav ul li {
     margin-left: 20px;
-}
+} */
 
 nav ul li a {
     text-decoration: none;
@@ -57,7 +57,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color: #ffdd57;
+    color: #6a11cb;
 }
 
 /* Sections */
@@ -215,7 +215,7 @@ footer {
     flex-direction: column;
     align-content: flex-end; */
     margin-top: 10px;
-    position: absolute;
+    position: fixed;
     top: 20px;
     left: 20px;
     cursor: pointer;
@@ -271,19 +271,52 @@ footer {
 }
 
 .sidebar-menu {
+    height: 10rem;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: space-evenly;
     position: fixed;
     top: -50rem;
-    left: 10rem;
-    /* transition: left 1s ease-in-out; */
+    transition: left 1s ease-in-out;
 }
 
 .tech {
-    /* position: fixed; */
     text-align: center;
 }
 
+/* .sidebar-menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    position: fixed;
+    height: 100vh;
+    width: 17rem;
+    background-color: white;
+    top: 0px;
+    left: -500px;
+    border: 2px solid black;
+    transition: left 1s ease-in-out;
+} */
+
+.s1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    height: 100%;
+    width: 100%;
+    position: relative;
+    top: 4rem;
+    left: 1rem;
+}
+
+
+
 #check:checked ~ .sidebar-menu {
-    top: 0.5rem;
+    top: 2rem;
+    left: 0rem;
 }
 
 #check:checked ~ .sri-indu {
@@ -294,12 +327,15 @@ footer {
 
 .img {
     margin: 0;
+    padding: 0;
 }
 
 .sri-indu {
     display: flex;
-    justify-content: center;
+    flex-direction: row;
+    justify-content: flex-start;
     align-items: center;
+    align-content: center;
     width: 100%;  /* Ensures full width of the parent container */
     padding: 0;  /* Remove any unwanted padding */
     margin: 0;  /* Remove any unwanted margin */
@@ -309,11 +345,39 @@ footer {
 }
 
 .sri-indu-img {
-    margin-right: 10px; /* Optional: add some space between the image and the text*/
+    margin-right: 2px; /* Optional: add some space between the image and the text*/
 }
 
 .clg-name {
     margin: 0; /* Remove default margin from the heading */
 }
 
+.navul {
+    width: 100vw;
+    /* width: 100%; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-content: center;
+    align-items: center;
+}
 
+.navli {
+    width: fit-content;
+    margin: 0;
+    /* background-color: #ddd; */
+    /* border-radius: 2rem; */
+}
+
+.navli a {
+    color: black;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.name {
+    margin: 0;
+}
