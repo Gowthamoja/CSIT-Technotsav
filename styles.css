@@ -373,7 +373,7 @@ footer {
 }
 
 /* Responsive Design */
-@media (min-width: 480px) and (max-width: 768px) {
+@media (min-width: 479px) and (max-width: 768px) {
 
     html {
         font-size: 19px !important;
@@ -471,6 +471,10 @@ footer {
         font-size: 19px !important;
     }
 
+    #home {
+        padding-top: 7rem;
+    }
+
     #technical {
         padding-top: 9rem;
     }
@@ -500,8 +504,10 @@ footer {
         align-items: center !important;
     }
 
-
-
+    #home h2{
+        font-size: 2rem;
+    }
+    
     .sri-indu {
         top: 5rem !important;
         left: 0rem !important;
@@ -525,8 +531,8 @@ footer {
         width: 10rem;
     }
 
-    .clg-name .name {
-        font-size: 1.5rem !important;
+    .clg-name h1 {
+        font-size: 1rem !important;
     }
 
     header {
@@ -555,7 +561,7 @@ footer {
     }
 }
 
-@media (min-width: 320px) and (max-width: 374px) {
+@media (min-width: 319px) and (max-width: 375px) {
 
     html {
         font-size: 12px;
@@ -582,7 +588,9 @@ footer {
         align-items: center !important;
     }
 
-
+    #home {
+        /* padding-top: 9rem; */
+    }
 
     .sri-indu {
         top: 5rem !important;
@@ -637,7 +645,11 @@ footer {
     }
 }
 
-@media (min-width: 280px) and (max-width: 319px) {
+@media (min-width: 279px) and (max-width: 319px) {
+
+    html {
+        font-size: 11px;
+    }
 
     section p {
         font-size: 1rem !important;
@@ -747,7 +759,10 @@ footer {
         align-items: center !important;
     }
 
-
+    #home h2{
+        font-size: 1rem;
+        margin-top: 1rem;
+    }
 
     .sri-indu {
         top: 7rem !important;
@@ -772,8 +787,8 @@ footer {
         width: 10rem;
     }
 
-    .clg-name .name {
-        font-size: 1.5rem !important;
+    .clg-name h1 {
+        font-size: 1rem !important;
     }
 
     header {
