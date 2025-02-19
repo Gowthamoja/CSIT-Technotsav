@@ -17,12 +17,14 @@
 }
 
 body {
-    background: linear-gradient(to right, #bfdbfe, #d8b4fe); /* Updated gradient background */
+    background: linear-gradient(to right, #bfdbfe, #d8b4fe);
+    /* Updated gradient background */
     color: var(--dark-text);
 }
 
 header {
-    background: linear-gradient(135deg, #bfdbfe, #d8b4fe); /* Adjusted gradient */
+    background: linear-gradient(135deg, #bfdbfe, #d8b4fe);
+    /* Adjusted gradient */
     color: var(--dark-text);
     padding: 1rem 2rem;
     display: flex;
@@ -68,11 +70,13 @@ section {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background: linear-gradient(to right, #bfdbfe, #d8b4fe); /* Updated gradient background */
+    background: linear-gradient(to right, #bfdbfe, #d8b4fe);
+    /* Updated gradient background */
 }
 
 #home {
-    background: linear-gradient(to right, #bfdbfe, #d8b4fe); /* Updated gradient for home section */
+    background: linear-gradient(to right, #bfdbfe, #d8b4fe);
+    /* Updated gradient for home section */
     color: var(--dark-text);
 }
 
@@ -130,7 +134,8 @@ form label {
     text-align: left;
 }
 
-input, select {
+input,
+select {
     width: 100%;
     padding: 10px;
     margin-bottom: 15px;
@@ -162,7 +167,8 @@ button:hover {
 
 /* Footer */
 footer {
-    background: linear-gradient(135deg, #bfdbfe, #d8b4fe); /* Updated gradient */
+    background: linear-gradient(135deg, #bfdbfe, #d8b4fe);
+    /* Updated gradient */
     color: white;
     text-align: center;
     padding: 1rem;
@@ -175,6 +181,7 @@ footer {
         opacity: 0;
         transform: translateY(-10px);
     }
+
     to {
         opacity: 1;
         transform: translateY(0);
@@ -182,7 +189,19 @@ footer {
 }
 
 /* Responsive Design */
-@media (min-width: 375px) {
+@media (min-width: 1025px) {
+
+    html {
+        font-size: 23px !important;
+    }
+
+    #technical {
+        padding-top: 9rem;
+    }
+
+    #non-technical {
+        padding-top: 12rem;
+    }
 
     section p {
         font-size: 1rem !important;
@@ -193,7 +212,7 @@ footer {
     }
 
     .navli a {
-        font-size: 1rem !important;
+        font-size: 0.9rem !important;
     }
 
     .navli {
@@ -210,19 +229,22 @@ footer {
     .sri-indu {
         top: 5rem !important;
         left: 0rem !important;
+        justify-content: flex-start;
+        align-items: center;
+        align-content: center;
     }
 
-    #check:checked ~ .sidebar-menu {
+    #check:checked~.sidebar-menu {
         top: 2rem;
         left: 0rem;
     }
-    
-    #check:checked ~ .sri-indu {
-          /* Hides the .sri-indu container when the checkbox is checked */
-          top: -500rem !important;
+
+    #check:checked~.sri-indu {
+        /* Hides the .sri-indu container when the checkbox is checked */
+        top: -500rem !important;
     }
 
-    .sri-indu-img img{
+    .sri-indu-img img {
         height: 5rem;
         width: 10rem;
     }
@@ -257,10 +279,24 @@ footer {
     }
 }
 
-@media (min-width: 320px) {
+/* Responsive Design */
+@media (min-width: 769px) and (max-width: 1024px) {
+
+    html {
+        font-size: 17px;
+    }
+
+
+    #technical {
+        padding-top: 70rem;
+    }
+
+    #non-technical {
+        padding-top: 12rem;
+    }
 
     section p {
-        font-size: 0.7rem !important;
+        font-size: 1rem !important;
     }
 
     section h2 {
@@ -268,7 +304,7 @@ footer {
     }
 
     .navli a {
-        font-size: 1rem !important;
+        font-size: 0.9rem !important;
     }
 
     .navli {
@@ -285,19 +321,114 @@ footer {
     .sri-indu {
         top: 5rem !important;
         left: 0rem !important;
+        justify-content: flex-start;
+        align-items: center;
+        align-content: center;
     }
 
-    #check:checked ~ .sidebar-menu {
+    #check:checked~.sidebar-menu {
         top: 2rem;
         left: 0rem;
     }
-    
-    #check:checked ~ .sri-indu {
-          /* Hides the .sri-indu container when the checkbox is checked */
-          top: -500rem !important;
+
+    #check:checked~.sri-indu {
+        /* Hides the .sri-indu container when the checkbox is checked */
+        top: -500rem !important;
     }
 
-    .sri-indu-img img{
+    .sri-indu-img img {
+        height: 5rem;
+        width: 10rem;
+    }
+
+    .clg-name .name {
+        font-size: 1.5rem !important;
+    }
+
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav ul {
+        margin-top: 10px;
+    }
+
+    nav ul li {
+        margin: 5px 0;
+    }
+
+
+    section {
+        padding: 80px 5%;
+    }
+
+    li {
+        width: 80%;
+    }
+
+    form {
+        width: 80%;
+    }
+}
+
+/* Responsive Design */
+@media (min-width: 480px) and (max-width: 768px) {
+
+    html {
+        font-size: 19px !important;
+    }
+
+    #technical {
+        padding-top: 9rem;
+    }
+
+    #non-technical {
+        padding-top: 12rem;
+    }
+
+    section p {
+        font-size: 1rem !important;
+    }
+
+    section h2 {
+        font-size: 1.2rem !important;
+    }
+
+    .navli a {
+        font-size: 0.9rem !important;
+    }
+
+    .navli {
+        width: min-content !important;
+        display: flex !important;
+        flex-direction: row !important;
+        justify-content: space-evenly !important;
+        align-content: center !important;
+        align-items: center !important;
+    }
+
+
+
+    .sri-indu {
+        top: 5rem !important;
+        left: 0rem !important;
+        justify-content: flex-start;
+        align-items: center;
+        align-content: center;
+    }
+
+    #check:checked~.sidebar-menu {
+        top: 2rem;
+        left: 0rem;
+    }
+
+    #check:checked~.sri-indu {
+        /* Hides the .sri-indu container when the checkbox is checked */
+        top: -500rem !important;
+    }
+
+    .sri-indu-img img {
         height: 5rem;
         width: 10rem;
     }
@@ -332,7 +463,181 @@ footer {
     }
 }
 
-@media (min-width: 280px) {
+/* Responsive Design */
+@media (min-width: 375px) and (max-width: 479px) {
+
+
+    html {
+        font-size: 19px !important;
+    }
+
+    #technical {
+        padding-top: 9rem;
+    }
+
+    #non-technical {
+        padding-top: 12rem;
+    }
+
+    section p {
+        font-size: 1rem !important;
+    }
+
+    section h2 {
+        font-size: 1.2rem !important;
+    }
+
+    .navli a {
+        font-size: 0.9rem !important;
+    }
+
+    .navli {
+        width: min-content !important;
+        display: flex !important;
+        flex-direction: row !important;
+        justify-content: space-evenly !important;
+        align-content: center !important;
+        align-items: center !important;
+    }
+
+
+
+    .sri-indu {
+        top: 5rem !important;
+        left: 0rem !important;
+        justify-content: flex-start;
+        align-items: center;
+        align-content: center;
+    }
+
+    #check:checked~.sidebar-menu {
+        top: 2rem;
+        left: 0rem;
+    }
+
+    #check:checked~.sri-indu {
+        /* Hides the .sri-indu container when the checkbox is checked */
+        top: -500rem !important;
+    }
+
+    .sri-indu-img img {
+        height: 5rem;
+        width: 10rem;
+    }
+
+    .clg-name .name {
+        font-size: 1.5rem !important;
+    }
+
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav ul {
+        margin-top: 10px;
+    }
+
+    nav ul li {
+        margin: 5px 0;
+    }
+
+    section {
+        padding: 80px 5%;
+    }
+
+    li {
+        width: 80%;
+    }
+
+    form {
+        width: 80%;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 374px) {
+
+    html {
+        font-size: 12px;
+    }
+
+    section p {
+        font-size: 0.7rem !important;
+    }
+
+    section h2 {
+        font-size: 1.2rem !important;
+    }
+
+    .navli a {
+        font-size: 1rem !important;
+    }
+
+    .navli {
+        width: min-content !important;
+        display: flex !important;
+        flex-direction: row !important;
+        justify-content: space-evenly !important;
+        align-content: center !important;
+        align-items: center !important;
+    }
+
+
+
+    .sri-indu {
+        top: 5rem !important;
+        left: 0rem !important;
+        justify-content: flex-start;
+        align-items: center;
+        align-content: center;
+    }
+
+    #check:checked~.sidebar-menu {
+        top: 2rem;
+        left: 0rem;
+    }
+
+    #check:checked~.sri-indu {
+        /* Hides the .sri-indu container when the checkbox is checked */
+        top: -500rem !important;
+    }
+
+    .sri-indu-img img {
+        height: 5rem;
+        width: 10rem;
+    }
+
+    .clg-name .name {
+        font-size: 1.5rem !important;
+    }
+
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav ul {
+        margin-top: 10px;
+    }
+
+    nav ul li {
+        margin: 5px 0;
+    }
+
+    section {
+        padding: 80px 5%;
+    }
+
+    li {
+        width: 80%;
+    }
+
+    form {
+        width: 80%;
+    }
+}
+
+@media (min-width: 280px) and (max-width: 319px) {
 
     section p {
         font-size: 1rem !important;
@@ -362,19 +667,23 @@ footer {
         left: 0rem !important;
     }
 
-    #check:checked ~ .sidebar-menu {
+    #check:checked~.sidebar-menu {
         top: 2rem;
         left: 0rem;
     }
-    
-    #check:checked ~ .sri-indu {
-          /* Hides the .sri-indu container when the checkbox is checked */
-          top: -500rem !important;
+
+    #check:checked~.sri-indu {
+        /* Hides the .sri-indu container when the checkbox is checked */
+        top: -500rem !important;
     }
 
-    .sri-indu-img img{
+    .sri-indu-img img {
         height: 5rem;
         width: 10rem;
+    }
+
+    #non-technical {
+        padding-top: 9rem;
     }
 
     .clg-name .name {
@@ -407,7 +716,11 @@ footer {
     }
 }
 
-@media (min-width: 270px) {
+@media (min-width: 270px) and (max-width: 279px) {
+
+    html {
+        font-size: 8px;
+    }
 
     section p {
         font-size: 1rem !important;
@@ -437,27 +750,30 @@ footer {
 
 
     .sri-indu {
-        top: 5rem !important;
+        top: 7rem !important;
         left: 0rem !important;
+        justify-content: flex-start;
+        align-items: center;
+        align-content: center;
     }
 
-    #check:checked ~ .sidebar-menu {
+    #check:checked~.sidebar-menu {
         top: 2rem;
         left: 0rem;
     }
-    
-    #check:checked ~ .sri-indu {
-          /* Hides the .sri-indu container when the checkbox is checked */
-          top: -500rem !important;
+
+    #check:checked~.sri-indu {
+        /* Hides the .sri-indu container when the checkbox is checked */
+        top: -500rem !important;
     }
 
-    .sri-indu-img img{
+    .sri-indu-img img {
         height: 5rem;
         width: 10rem;
     }
 
     .clg-name .name {
-        font-size: 1rem !important;
+        font-size: 1.5rem !important;
     }
 
     header {
@@ -507,25 +823,26 @@ footer {
     cursor: pointer;
     z-index: 100;
 }
-.one{
-    height:5px;
+
+.one {
+    height: 5px;
     width: 20px;
     background-color: black;
     transition: 0.5s;
-    margin-left: 10px; 
+    margin-left: 10px;
     margin-bottom: 3px;
-    
+
 }
 
 .two {
     height: 5px;
-    width:  30px;
+    width: 30px;
     background-color: black;
     transition: 0.5s;
 }
 
-.three{
-    height:5px;
+.three {
+    height: 5px;
     width: 20px;
     background-color: black;
     transition: 0.5s;
@@ -534,7 +851,7 @@ footer {
 }
 
 #check {
-    display:none;
+    display: none;
     padding: 0;
     margin: 40px;
 }
@@ -544,17 +861,17 @@ footer {
 }
 
 /* Checked State - Keep animation until unchecked */
-#check:checked ~ .ham label .one {
+#check:checked~.ham label .one {
     width: 14px;
     transform: rotate(320deg);
     margin-left: 15px;
 }
 
-#check:checked ~ .ham label .two {
+#check:checked~.ham label .two {
     transform: rotate(40deg);
 }
 
-#check:checked ~ .ham label .three {
+#check:checked~.ham label .three {
     margin: 0;
     width: 14px;
     transform: rotate(320deg);
@@ -604,14 +921,14 @@ footer {
 
 
 
-#check:checked ~ .sidebar-menu {
+#check:checked~.sidebar-menu {
     top: 2rem;
     left: 0rem;
 }
 
-#check:checked ~ .sri-indu {
-      /* Hides the .sri-indu container when the checkbox is checked */
-      top: -500rem;
+#check:checked~.sri-indu {
+    /* Hides the .sri-indu container when the checkbox is checked */
+    top: -500rem;
 }
 
 
@@ -626,20 +943,25 @@ footer {
     justify-content: flex-start;
     align-items: center;
     align-content: center;
-    width: 100%;  /* Ensures full width of the parent container */
-    padding: 0;  /* Remove any unwanted padding */
-    margin: 0;  /* Remove any unwanted margin */
+    width: 100%;
+    /* Ensures full width of the parent container */
+    padding: 0;
+    /* Remove any unwanted padding */
+    margin: 0;
+    /* Remove any unwanted margin */
     position: absolute;
     top: 2rem;
     left: 5rem;
 }
 
 .sri-indu-img {
-    margin-right: 2px; /* Optional: add some space between the image and the text*/
+    margin-right: 2px;
+    /* Optional: add some space between the image and the text*/
 }
 
 .clg-name {
-    margin: 0; /* Remove default margin from the heading */
+    margin: 0;
+    /* Remove default margin from the heading */
 }
 
 .navul {
